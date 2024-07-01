@@ -1,0 +1,18 @@
+<header class="h-[68px] z-10 dark-nav sticky top-0 flex items-center justify-between px-10">
+    <!-- logo + navigation items -->
+     <div class="flex gap-5">
+      <img src="https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" alt="netflix-logo" width="120">
+        <ul class="flex items-center" *ngFor="let item of navList">
+         <li class="text-neutral-200 cursor-pointer text-sm font-extralight hover:text-gray-400 transition=[1s]">{{item}}</li>
+        </ul>
+     </div>
+     <!-- welcome user | profile-img | signout -->
+      <div class="text-white flex items-center gap-4">
+        <div class="flex items-center gap-2">
+          <a href=""><span>Welcome <strong>Anmol</strong></span></a>
+          <img [src]="userImg" alt="" width="35" alt="user-img" class="rounded-full">
+        </div>
+        &nbsp; | &nbsp;
+        <a href="">Signout</a>
+      </div>
+</header>
